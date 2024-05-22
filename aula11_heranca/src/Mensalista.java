@@ -9,16 +9,16 @@ public class Mensalista extends Empregado {
         this.cargo = cargo;
     }
 
-    public Mensalista(String nome,String endereco, double salario, String cargo){
-        super(nome, endereco, salario);
+    public Mensalista(String nome,String endereco, String cargo){
+        super(nome, endereco);
         this.cargo = cargo;
     }
-    public void calculaSalario(){
+    public void calcularSalario(){
         if(cargo.equals("Junior")){
             salario = 2500;
-        }else if(cargo.equals("pleno")){
+        }else if(cargo.equals("Pleno")){
             salario = 3500;
-        }else{
+        }else if (cargo.equals("Senior")){
             salario = 5500;
         }
     }

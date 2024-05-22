@@ -7,10 +7,9 @@ public class Empregado {
     // construtor
     public Empregado(){
     }
-    public Empregado(String nome, String endereco, double salario){
+    public Empregado(String nome, String endereco){
         this.nome = nome;
         this.endereco = endereco;
-        this.salario = salario;
     }
     public String getNome() {
         return nome;

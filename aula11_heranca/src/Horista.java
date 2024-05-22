@@ -9,12 +9,12 @@ public class Horista extends Empregado{
         this.horas = horas;
     }
     
-    public Horista(String nome, String endereco, double salario, double horas) {
-        super(nome, endereco, salario);
+    public Horista(String nome, String endereco, double horas) {
+        super(nome, endereco);
         this.horas = horas;
     }
 
-    public void calcularHorista(){
-        salario = horas * 50;
+    public void calcularHorista(int v ){
+        salario = horas * v;
     }
 }
